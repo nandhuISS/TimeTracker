@@ -11,11 +11,16 @@
 |
 */
 
-Route::get('/', 'WelcomeController@index');
-
-Route::get('home', 'HomeController@index');
+Route::get('/', function(){
+	return view('index');
+});
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+
+Route::group(array('prefix'=>'api'),function(){
+	Route::resource('time','TimeEntriesController');
+	Route::resource('users','UsersController');
+});
