@@ -1,0 +1,21 @@
+{
+  "summary": {
+    "title": "Timetracker threat model",
+    "owner": "nandhu"
+  },
+  "detail": {
+    "contributors": [
+      {
+        "name": "nandhuNUS"
+      }
+    ],
+    "diagrams": [
+      {
+        "title": "Test diag",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 0
+      }
+    ],
+    "reviewer": "Nandhu"
+  }
+}
